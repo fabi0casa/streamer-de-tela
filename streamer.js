@@ -27,7 +27,7 @@ function getLocalIp() {
     return 'localhost';
 }
 
-console.log("\n--- STREAMER MULTIFUNCIONAL (v3 - Compatibilidade Total) ---");
+console.log("\n--- STREAMER MULTIFUNCIONAL ---");
 console.log("1. Transmitir Arquivo de Vídeo (MP4, MKV, etc)");
 console.log("2. Transmitir Minha Tela (Método Universal)");
 
@@ -227,7 +227,7 @@ function getSourceHTML() {
                     video.srcObject = stream;
                     video.play();
 
-                    document.getElementById('status').innerText = "🔥 TRANSMITINDO...";
+                    document.getElementById('status').innerText = "TRANSMITINDO...";
                     btn.style.display = 'none';
 
                     setInterval(() => {

@@ -6,13 +6,14 @@
   Como fazer:
    1. No seu terminal, instale o compilador (é rápido):
    1     npm install -g pkg
-   2. Gere o executável para Windows com este comando:
+   2. Gere o executável para Windows com este comando (usando Node 18 para compatibilidade):
    1     pkg streamer.js --targets node18-win-x64 --output streamer.exe
 
-   3. Para adicionar o ícone ao arquivo .exe (limpando o ícone padrão do Node), use:
-   1     npx resedit-cli --in streamer.exe --out streamer.exe --delete-allicon --icon 1,"icon/icon .ico"
+   ⚠️ **Nota sobre Ícone:** O uso do `resedit-cli` pode corromper o executável gerado pelo `pkg`. Caso queira tentar adicionar o ícone:
+   1     npx resedit-cli --in streamer.exe --out streamer_com_icone.exe --icon 1,"icon/icon .ico"
+   (Se o arquivo corromper, use apenas o `streamer.exe` original).
 
-   4. Pronto! Ele vai atualizar o arquivo streamer.exe com o novo ícone.
+   3. Pronto! O arquivo `streamer.exe` é seu programa independente.
 
   Vantagem do .EXE:
    - Você pode levar esse streamer.exe para qualquer outro computador com Windows e ele vai funcionar, mesmo que o outro

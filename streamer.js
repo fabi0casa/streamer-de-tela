@@ -4,6 +4,9 @@ const path = require('path');
 const os = require('os');
 const readline = require('readline');
 
+// Define o título da janela do terminal
+process.stdout.write('\x1b]0;Streamer\x07');
+
 const PORT = 5050;
 
 // Buffer para a imagem da tela atual

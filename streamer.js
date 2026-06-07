@@ -153,8 +153,8 @@ function createFileServer(videoPath) {
                     <title>Streaming: ${path.basename(videoPath)}</title>
                     <style>
                         body { background: #0a0a0a; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; font-family: 'Segoe UI', sans-serif; }
-                        video { width: 90%; max-height: 80vh; outline: none; box-shadow: 0 0 30px rgba(0, 212, 255, 0.3); border: 2px solid #00d4ff; border-radius: 8px; }
-                        h2 { color: #00d4ff; margin-bottom: 20px; text-align: center; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; }
+                        video { width: 90%; max-height: 80vh; outline: none; border-radius: 8px; }
+                        h2 { color: #fff; margin-bottom: 20px; text-align: center; text-transform: uppercase; letter-spacing: 2px; }
                     </style>
                 </head>
                 <body>
